@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAWOML</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>VAWOML</h1>
+    </header>
+
+    <div class="container">
+      <div class="left-container">
+        <input
+          type="file"
+          id="audioFile"
+          name="audioFile"
+          placeholder="Select audio file"
+          onchange="playAudio()"
+        />
+        <button>Record</button>
+      </div>
+      <div class="right-container">
+        <div class="right-top">
+          <audio controls autoplay id="audio">
+            <source id="audioSource" src="" type="audio/wav" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="right-bottom">
+          <button>Upload</button>
+          <button>Clear</button>
+        </div>
+      </div>
+    </div>
+    <div class="output-container">
+      <button>Download</button>
+      <input
+        type="text"
+        name="list"
+        id="list"
+        placeholder="Output Feature vector"
+      />
+    </div>
+  </body>
+</html>
