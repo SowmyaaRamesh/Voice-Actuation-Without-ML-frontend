@@ -43,7 +43,7 @@ header {
   justify-content: center;
 }
 
-.left-container input {
+.left-container input[type="file"] {
   color: #fff;
   font-size: 0.9rem;
   margin-bottom: 34px;

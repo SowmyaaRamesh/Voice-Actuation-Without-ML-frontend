@@ -8,3 +8,7 @@ const playAudio = () => {
   audio.load();
   //   audio.play();
 };
+
+const submitData = () => {
+  document.getElementById("form").submit();
+};
